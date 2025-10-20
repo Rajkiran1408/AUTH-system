@@ -132,6 +132,8 @@ export const sendVerifyOtp = async (req, res) => {
     res.json({ success: true, message: "Verification OTP Sent on Email" });
   } catch (error) {
     res.json({ success: false, message: error.message });
+    console.log("email cannot send");
+    
   }
 };
 
