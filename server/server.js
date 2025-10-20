@@ -16,6 +16,7 @@ const allowedOrigins = ['http://localhost:5173','https://auth-system-aatr.onrend
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({origin:allowedOrigins , credentials:true}));
+app.options('*', cors({ origin: allowedOrigins, credentials: true })); 
 
 
 
