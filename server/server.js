@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 connectDB();
 
-const allowedOrigins = ['http://localhost:5173','https://auth-system-cli.onrender.com','https://auth-system-cli.vercel.app'] 
+const allowedOrigins = ['http://localhost:5173','https://auth-system-cli.onrender.com','https://auth-system-cl.vercel.app'] 
 
 app.use(express.json());
 app.use(cookieParser());
